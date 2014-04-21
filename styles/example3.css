@@ -1,0 +1,34 @@
+section { 
+  height: 1000px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+}
+ 
+article { 
+  height: 1000px; 
+  width: 100%;
+}
+
+
+/* the only change is addition of fixed in each background declaration below */
+
+#home {
+	background: url(../images/bee.jpg) 50% 0 no-repeat fixed;
+}
+#sec2 {
+	background: url(../images/leaf.jpg) 50% 0 no-repeat fixed;
+}
+#sec3 {
+	background: url(../images/lioness.jpg) 50% 0 no-repeat fixed;
+}
+#sec4 {
+	background: url(../images/flowers.jpg) 50% 0 no-repeat fixed;
+}
+
+/* add shadow on bottom of each section */
+.shadow {
+	-moz-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
