@@ -56,3 +56,8 @@ a:hover {
 	text-decoration: none;
 	}
 
+/* media queries */
+
+@media only screen and (max-width: 740px) {
+	#container { border: none; }
+}
