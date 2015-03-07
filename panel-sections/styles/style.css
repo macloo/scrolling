@@ -1,0 +1,113 @@
+/* universal selector to set box-sizing for all browsers
+   */
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box; 
+	   -moz-box-sizing: border-box; 
+	        box-sizing: border-box;
+	}
+
+/* typical styles 
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+body {
+	font-family: Cambria, Georgia, serif;
+	font-size: 1em;
+	color: #fff;
+	background: #333;
+	margin, padding: 0;
+	}
+
+h1 {
+	font-size: 2.5em;
+	font-weight: normal;
+	line-height: 2em;
+	margin: 0;
+	}
+
+p {
+	margin: 0 0 20px 0;
+	padding: 0;
+	font-size: 1.6em;
+	line-height: 1.4em;
+	}
+
+/* panel-style formatting 
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+header, footer {
+  position: relative;
+  height: 640px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  color: #fff;
+  text-shadow: 1px 1px rgba(66, 66, 66, .5);
+  position: relative;
+  height: 640px;
+  width: 100%;
+  margin: 0;
+}
+
+.poem, .info {
+  max-width: 500px;
+  height: 40%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.poem { font-style: italic; }
+
+.info {
+	max-width: 100%;
+	padding: 0 10px;
+	}
+
+.attrib {
+	font-family: Calibri, Verdana, sans-serif;
+	font-size: 1.2em;
+	font-style: normal;
+	text-align: right;
+	}
+
+.mouse { background: #A49A87; }
+.eggplant { background: #332532 50% 0 no-repeat fixed; }
+.dustygrape { background: #644D52; }
+.papaya { background: #F77A52; }
+.tangerine { background: #FF974F; }
+.orchid { background: #A43972; }
+.tomato { background: #F74045; }
+
+/* links 
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+a:focus {
+	outline: 2px solid #069;
+	}
+
+a:link, a:active, a:visited {
+	color: #00c;
+	text-decoration: underline;
+	}
+
+a:hover {
+	color: #00f;
+	text-decoration: none;
+	}
+
+/* media queries 
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media only screen and (max-width: 740px) {
+	h1 { font-size: 1.4em; }
+	p { font-size: 1.1em; }
+	.attrib { font-size: 1em; }
+}
+
